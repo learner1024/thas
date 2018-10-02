@@ -1,16 +1,18 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-
-const About = (props) => {
-    return <h1>About</h1>;
-}
-
-const Services = (props) => {
-    return <h1>Services</h1>;
-}
+import About from '../About';
+import Services from '../Services';
 
 const Contact = (props) => {
-    return <h1>Contact</h1>;
+    return (
+        <div>
+            <p>Mobile Number : +91 842 170 9999 / 827 532 6999</p>
+            <p>Email : tuliphortagro@gmail.com</p>
+            <p>Website : www.tuliphortagro.com</p>
+            <p>Office : Pawar Nagar, Thergaon, Pimpri-Chichwad, Pune.</p>
+            
+        </div>
+    );
 }
 
 const CompletedProjects = (props) => {

@@ -12,7 +12,7 @@ export default () => {
                 <Typography color="inherit" noWrap>
                     TULIP HORTAGRO SERVICES
                 </Typography>
-                <Button><Link to='/services'>Services</Link></Button>
+                <Button component={Link} to='/services'>Services</Button>
                 <SimpleMenu heading="Projects" items={[
                     {
                         displayText: 'Ongoing Projects',
@@ -23,8 +23,8 @@ export default () => {
                         route: 'projects_completed'
                     }
                 ]} />
-                <Button><Link to='/about'>About us</Link></Button>
-                <Button><Link to='/contact'>contact</Link></Button>
+                <Button component={Link} to='/about'>about</Button>
+                <Button component={Link} to='/contact'>contact</Button>
             </Toolbar>
         </AppBar>
   );

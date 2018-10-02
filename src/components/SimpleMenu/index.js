@@ -43,8 +43,8 @@ export default class SimpleMenu extends React.Component {
           {this.props.items && 
             this.props.items.map((element, i) => {
             return (
-              <MenuItem key={i} onClick={this.handleClose}>
-                <Link to={element.route}>{element.displayText}</Link>
+              <MenuItem component={Link} to={element.route} key={i} onClick={this.handleClose}>
+                {element.displayText}
               </MenuItem>)
           })}
 
