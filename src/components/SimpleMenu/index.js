@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import {Link} from 'react-router-dom';
 
 export default class SimpleMenu extends React.Component {
   constructor(props){
@@ -41,7 +42,10 @@ export default class SimpleMenu extends React.Component {
         >
           {this.props.items && 
             this.props.items.map((element, i) => {
-            return <MenuItem key={i} onClick={this.handleClose}>{element}</MenuItem>
+            return (
+              <MenuItem key={i} onClick={this.handleClose}>
+                <Link to={element.route}>{element.displayText}</Link>
+              </MenuItem>)
           })}
 
           
