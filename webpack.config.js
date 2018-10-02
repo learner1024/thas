@@ -10,7 +10,7 @@ module.exports = {
         port: 9000
     },
     entry: {
-        "thas": './src/app.js'
+        "thas": './src/index.js'
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
